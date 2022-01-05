@@ -29,4 +29,4 @@ i attemped to fix the heroku app, however i found myself not knowing where to be
 ## Secutrity concerns
 - the add movie form had not been html sanitised to remove potential code injection
 - the field has not been type checked to ensure that the ID entered is in the OMDB format - will allow users to add all kinds of inputs potentially breaking the favorites list
-- also no limit ha been put to the input size of the omdb format - will allow users to add all kinds of inputs potentially breaking the favorites list
+- also no character limit has been put in the add movie id input variable - will allow users to add all kinds of inputs potentially breaking the favorites list/ causing an error
