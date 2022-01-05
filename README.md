@@ -1,3 +1,6 @@
+## Heroku link 
+- Please read the Errors section, before going on the link.
+- https://larafavouritemovies.herokuapp.com/
 
 ## Setup/Use:
 - this application was used in wtih wamp application
