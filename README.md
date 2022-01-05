@@ -24,9 +24,13 @@
 - adequte error reporting , all redirects have status/error messages
 - use of layouts
 - use of bootstrap to make application responsive
+- use of css to make web app simple and minimalistic
 
 ## Errors:
+#### Heroku
 - Heroku app does not work as intended. it seems that the CSFR token or Https may be causing some issues. The error doesnt allow any post requests to be made. this problem doesnt exist when the application is on the php artisan server.
+- the css and bootsrap do not seem to work on the heroku app, it can be seen when you go to the register/login pages. i think it may be due to the configuration. I have read that heroku needs to be adjusted to ensure that it is picking information from the correct sources. I am still unsure of this.
+#### App
 - when you register and there are no favourties on the account and when you click on show favourites, it will redirect you to add movie page. However, if you were to add movies and then remove all of them, then when you go on favourites, an error will be displayed. I believe another check needs to be done to check for an empyty string with spaces. if that is the case the user should be redirected to add movie again
 
 ## Struggles
