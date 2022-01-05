@@ -3,6 +3,7 @@
 - this application was used in wtih wamp application
 - this application was tested on the php artisan server
 - please register and add a movie to the account in order to view the favourites
+- movies can be removed from favourites from the see detials of each movie
 
 ## Technologies:
 - Framework: Laravel
@@ -18,6 +19,7 @@
 #### other functionnality
 - adequte error reporting , all redirects have status/error messages
 - use of layouts
+- use of bootstrap to make application responsive
 
 ## Errors:
 - Heroku app does not work as intended. it seems that the CSFR token or Https may be causing some issues. The error doesnt allow any post requests to be made. this problem doesnt exist when the application is on the php artisan server.
