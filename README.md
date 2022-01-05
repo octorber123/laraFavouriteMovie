@@ -16,7 +16,7 @@
 - do a show more about a movie (see more details of a movie)
 - can see all favourites 
 - unauthenticated users cannot access user views
-#### other functionnality
+#### other functionality
 - adequte error reporting , all redirects have status/error messages
 - use of layouts
 - use of bootstrap to make application responsive
