@@ -4,6 +4,7 @@
 - this application was tested on the php artisan server
 - please register and add a movie to the account in order to view the favourites
 - movies can be removed from favourites from the see detials of each movie
+- i have noticed that the env file has been renamed to env.example when pushed to the repo. When cloning please make sure that the env file has the correct ending. i.e .env
 
 ## Technologies:
 - Framework: Laravel
