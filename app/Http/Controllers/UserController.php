@@ -48,10 +48,21 @@ class UserController extends Controller
         } else {
             return redirect("/register")->with('status', 'please login or register add movies to your favorites');
         }
-    }
-    public function create(){
-        return view('user.create');
-    }
+
+    /**
+     * send auth user to add movie to favs
+     * only users that are logged in can view this page else they go to register
+     *
+     */
+        }
+        public function create(){
+            if(Auth::check()){
+            return view('user.create');
+            } else {
+            return redirect("/register")->with('status', 'please login or register add movies to your favorites');
+
+            }
+        }
     /**
      *add a movie to the user account
      *only users that are logged can view this page
