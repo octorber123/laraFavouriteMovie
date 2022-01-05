@@ -16,7 +16,7 @@
 - can see all favourites 
 - unauthenticated users cannot access user views
 #### other functionnality
-- adequte error reporting
+- adequte error reporting , all redirects have status/error messages
 - use of layouts
 
 ## Errors:
