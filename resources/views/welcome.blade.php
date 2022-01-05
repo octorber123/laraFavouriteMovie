@@ -88,7 +88,8 @@
                 <h3> <a href="/register" class="nav-link" >please login or register to check your favourite movies!</a></td> </h3>
                 @endguest
                 @auth
-                <h3> <a href="/favourites" class="nav-link" >click here to see your favorite movies</a></td> </h3>
+                <h3> <a href="/favourites" class="nav-link" >click here to see your favourite movies</a></td> </h3>
+                <h3> <a href="/favourites/create" class="nav-link" >click here to add a movie to your favourites </a></td> </h3>
                 @endauth
             </div>
         </div>

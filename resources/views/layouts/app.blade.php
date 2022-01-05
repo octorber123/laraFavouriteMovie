@@ -38,6 +38,10 @@
                             <a class="nav-link" href="/favourites/create">Add movie</a>
 
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/favourites">Favourites</a>
+
+                        </li>
                         @endAuth
 
                     </ul>
