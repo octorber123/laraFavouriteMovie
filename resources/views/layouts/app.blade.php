@@ -33,6 +33,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        @Auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="/favourites/create">Add movie</a>
+
+                        </li>
+                        @endAuth
 
                     </ul>
 

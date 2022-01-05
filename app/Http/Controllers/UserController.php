@@ -28,7 +28,7 @@ class UserController extends Controller
 
         //if there is no movie in the favorite redirect them to home
         if (is_null($str) ){
-            return redirect('/home')->with('status', 'please add a movie to your favorites!');
+            return redirect('/favourites/create')->with('status', 'please add a movie to your favorites!');
         } else {
         
 
@@ -49,6 +49,30 @@ class UserController extends Controller
             return redirect("/register")->with('status', 'please login or register add movies to your favorites');
         }
     }
+    public function create(){
+        return view('user.create');
+    }
+    /**
+     *add a movie to the user account
+     *only users that are logged can view this page
+     *
+     */
+    public function store(Request $request){
+
+        $user = $this->validate(request(), [
+            'imdbID' => 'required'
+        ]);
+
+        $user = user::findOrFail(Auth::id());
+        $user->favourite_movies = $user->favourite_movies . "," . $request->input('imdbID');
+        $user->save();
+
+        return redirect('/favourites')->with('status', 'Movie favourited!');
+
+    }
+
+
+
     /**
      *Show more information about a particular movie
      *only users that are logged can view this page
@@ -96,7 +120,7 @@ class UserController extends Controller
             }
         }
 
-        
+
         $user->favourite_movies = $str;
         $user->save();
         return redirect('/favourites')->with('status', 'movie removed form favourites');

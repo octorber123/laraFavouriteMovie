@@ -20,6 +20,8 @@ Route::get('/', function () {
 });
 //shows the clients
 Route::get('/favourites', 'App\Http\Controllers\UserController@index');
+Route::get('/favourites/create', 'App\Http\Controllers\UserController@create');
+Route::post('/favourites', 'App\Http\Controllers\UserController@store');
 Route::get('/favourites/{id}', 'App\Http\Controllers\UserController@show');
 Route::put('/favourites/{id}', 'App\Http\Controllers\UserController@remove_movie');
 
