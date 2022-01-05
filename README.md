@@ -5,8 +5,8 @@
 - - please register and add a movie to the account in order to view the favourites
 
 ## technologies:
-Framework: Laravel
-Languages : PHP, blade
+- Framework: Laravel
+- Languages : PHP, blade
 
 ## Functionality:
 #### users can:
