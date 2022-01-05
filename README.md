@@ -1,10 +1,10 @@
 
-## setup/use:
+## Setup/Use:
 - this application was used in wtih wamp application
 - this application was tested on the php artisan server
 - - please register and add a movie to the account in order to view the favourites
 
-## technologies:
+## Technologies:
 - Framework: Laravel
 - Languages : PHP, blade
 
