@@ -22,7 +22,7 @@ Languages : PHP, blade
 ## Struggles
 i attemped to fix the heroku app, however i found myself not knowing where to begin, alot of the documentation seems to be very vague and chat room solutions have not worked. As a final resort i have contacted laracasts and join a laravel discord server to hopefully find someone that can help.
 
-##Secutrity concerns
+## Secutrity concerns
 - the add movie form had not been html sanitised to remove potential code injection
 - the field has not been type checked to ensure that the ID entered is in the OMDB format - will allow users to add all kinds of inputs potentially breaking the favorites list
 - also no limit ha been put to the input size of the omdb format - will allow users to add all kinds of inputs potentially breaking the favorites list
