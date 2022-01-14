@@ -1,3 +1,5 @@
+# Laravel Favourite Movie
+- This is a simple Laravel project uses the OMBD movie API, to allow registered users to add movies to their favourites by inputting the IMDB ID of the movie.
 ## Heroku link 
 - Please read the Errors section, before going on the link.
 - https://larafavouritemovies.herokuapp.com/
